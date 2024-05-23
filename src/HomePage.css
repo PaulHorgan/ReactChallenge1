@@ -1,0 +1,39 @@
+.box1{    font-size: x-large;
+    float:left;
+    color:green;
+    background-color: white;
+    justify-content: flex-start;
+}
+.container {
+    justify-content: left center;
+    max-width: 75%;
+    width: 75%;
+    margin-left:12.5%;
+    color: rgb(87, 129, 87);
+    background-color: white;
+}
+.img {
+    width: auto; 
+}
+
+.header1 {
+    font-size: 4em;
+    justify-content: center;
+}
+.box2{
+    float:right;
+    justify-content: flex-end;
+}
+.container h1{
+    justify-content: left center;
+    max-width: 75%;
+    width: 75%;
+    margin-left:12.5%;
+    color: rgb(87, 129, 87);
+    background-color: white;
+}
+
+.sub-head{
+    font-size: 2em;
+    color: rgb(87, 129, 87);
+}

@@ -1,0 +1,27 @@
+.wrapper{
+    width:400px;
+    float: left;
+    margin: 10px;
+}
+
+.name{
+    color: black;
+}
+
+.price {
+    color: red;
+}
+
+.add-cart-button {
+    width :100%;
+    height: 45px;
+    font-size: 1em;
+    color: rgb(87, 129, 87);
+}
+.in-cart {
+    width :100%;
+    height: 45px;
+    font-size: 1em;
+    color: rgb(219, 83, 29);
+
+}

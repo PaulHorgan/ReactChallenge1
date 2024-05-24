@@ -1,23 +1,18 @@
-import itemsData from '../itemsData.json';
+import '../CSS/PlantCard.css'
+import AddToCart from './AddToCart.jsx';
+import { useState } from 'react';
 
-function PlantCard() {
-    
-        itemsData.map((item) => (
-            <div className='card'> key={item.id}
-                <h1> {item.name}   </h1>
-                <h3> {item.price.toFixed(2)} </h3>
-                <img className="img" src={item.imageURL} alt="Broken Pic Link :-( " />
-            </div>
-        ))
-    }
 
-    // return (
-    //     <div className='card'>
-    //         <h1> {name}   </h1>
-    //         <h3> {price.toFixed(2)} </h3>
-    //         <img className="img" src={imageURL} alt="Broken Pic Link :-( " />
-    //     </div>
-    // );
-//}
+const PlantCard = ({ name, price, imageUrl }) => {
 
-export default PlantCard;
+    return (
+        <div className='wrapper'>
+            <img src={imageUrl} width={200} height={250} alt={name} title={name} />
+            <h3 className='name'> {name}</h3>
+            <p className='price' >£{price.toFixed(2)}</p>
+            <AddToCart />
+        </div>
+    )
+}
+
+export default PlantCard;   

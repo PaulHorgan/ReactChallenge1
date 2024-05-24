@@ -47,3 +47,13 @@
   position: center;
   size:100%;
 }
+
+.display {
+width: 75%;
+align-content: center;
+margin-left: 12.5%;
+}
+
+.items-grid{
+  margin:12.5%;
+}

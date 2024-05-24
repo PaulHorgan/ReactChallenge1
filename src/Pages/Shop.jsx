@@ -1,18 +1,22 @@
-import PlantCard from "../Components/PlantCard";
-import itemsData from "../itemsData.json";
+import '../App.css';
+import PlantCard from '../Components/PlantCard';
+import itemsData from '../itemsData.json';
 
-export default function Shop() {
+
+const Shop = () => {
     return (
-        <div>
-            {itemsData.map((item) =>
-                    <div className='card'>
-                        <PlantCard
-                            name={item.name}
-                            price={item.price}
-                            imageURL={item.imageUrl}
-                        />
-                    </div>
-            )}     
+        <div className='display'>
+        <>
+            <h1 className='header'> Our plants </h1>
+            <div className='items-grid'>
+                {itemsData.map(( item ) =>(
+                    <PlantCard {...item} />
+                    ))
+                }
+            </div>
+        </>
         </div>
     )
+
 }
+export default Shop;
